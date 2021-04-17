@@ -1,0 +1,183 @@
+/*carouseller.js 0.3b https://github.com/shrue348/responsive.carouseller Open source under the MIT License. Copyright Â© 2015 Aleksander Alekseev All rights reserved.*/
+
+.carouseller:before,
+.carouseller:after {
+    content: " ";
+    display: table;
+}
+
+.carouseller:after {
+    clear: both;
+}
+
+.carouseller [class*="span"] {
+    margin-left: 3px !important;
+    *margin-left: 3px !important;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.carouseller [class*="span"]:first-child,
+.carouseller [class*="span"]:first-child {
+    margin-left: 0 !important;
+}
+
+.carouseller>.carousel-wrapper>.carousel-items>.span_by5 {
+    width: 1.793789743589745%;
+}
+
+.carouseller>.carousel-wrapper>.carousel-items>.span3 {
+    width: 3.34%;
+}
+
+
+/*------Carouseller--------*/
+
+.carouseller {
+    position: relative;
+}
+
+.carouseller .carousel-items {
+    position: relative;
+    width: 997.4358974358974%;
+}
+
+.carouseller .carousel-block {
+    display: inline-block;
+    position: relative;
+}
+
+.carouseller .carousel-block:nth-child(n+7) {
+    display: none;
+}
+
+.carouseller .carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    margin: 0 15px
+}
+
+.carouseller .carousel-button-left,
+.carouseller .carousel-button-right {
+    position: absolute;
+    margin: 0;
+    bottom: 50%;
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 35px !important;
+    background: #fff;
+    font-size: 30px;
+    opacity: 1;
+    border-radius: 100px;
+    -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: linear-gradient(96deg, #53b2fe, #065af3);
+    text-decoration: none;
+    z-index: 2;
+}
+
+.carouseller .carousel-button-left {
+    left: -33px;
+}
+
+.carouseller .carousel-button-right {
+    right: -33px;
+}
+
+.carousel-block {
+    text-align: center;
+}
+
+.carouseller img {
+    max-width: 100%;
+}
+
+.carouseller h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #000;
+    margin: 5px 0 20px;
+}
+
+.carouseller {
+    margin: 10px 0;
+}
+
+.product {
+    border: 1px solid #f2f2f2;
+    padding: 5px;
+}
+
+.carousel-wrapper {
+    padding: 0 0 10px 0;
+}
+
+.related .carouseller>.carousel-wrapper>.carousel-items>.span3 {
+    width: 2.0% !important;
+}
+
+
+/*------Responsive-----------*/
+
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .carouseller>.carousel-wrapper>.carousel-items>.span_by5,
+    .carouseller>.carousel-wrapper>.carousel-items>.span3 {
+        width: 5%;
+    }
+    .related .carouseller>.carousel-wrapper>.carousel-items>.span3 {
+        width: 4.5% !important;
+    }
+}
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+    .carouseller>.carousel-wrapper>.carousel-items>.span_by5,
+    .carouseller>.carousel-wrapper>.carousel-items>.span12,
+    .carouseller>.carousel-wrapper>.carousel-items>.span6,
+    .carouseller>.carousel-wrapper>.carousel-items>.span4,
+    .carouseller>.carousel-wrapper>.carousel-items>.span3,
+    .carouseller>.carousel-wrapper>.carousel-items>.span2,
+    .carouseller>.carousel-wrapper>.carousel-items>.span1 {
+        width: 10%;
+    }
+    .related .carouseller>.carousel-wrapper>.carousel-items>.span3 {
+        width: 10% !important;
+    }
+}
+
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+    .carouseller>.carousel-wrapper>.carousel-items>.span_by5,
+    .carouseller>.carousel-wrapper>.carousel-items>.span12,
+    .carouseller>.carousel-wrapper>.carousel-items>.span6,
+    .carouseller>.carousel-wrapper>.carousel-items>.span4,
+    .carouseller>.carousel-wrapper>.carousel-items>.span3,
+    .carouseller>.carousel-wrapper>.carousel-items>.span2,
+    .carouseller>.carousel-wrapper>.carousel-items>.span1 {
+        width: 10%;
+        *width: 9.94680851063829%;
+    }
+}
+
+
+/* This can be deleted */
+
+.carousel-block {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.carouseller {
+    margin-bottom: 20px;
+}
